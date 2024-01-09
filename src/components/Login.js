@@ -37,7 +37,8 @@ const Login = (props) => {
     <div className='container'>
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
-          <label htmlFor="email" className="form-label">Email address</label>
+          <h1>Login to use iNoteBook</h1>
+          <label htmlFor="email" className="form-label my-2">Email address</label>
           <input type="email" className="form-control" id="email" name='email' value={credential.email} aria-describedby="emailHelp" onChange={onchange} required />
           <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
         </div>
