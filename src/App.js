@@ -8,6 +8,7 @@ import Alert from './components/Alert';
 import { useState } from 'react';
 import Login from './components/Login';
 import Signup from './components/Signup';
+import Blog from './components/Blog';
 
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
     })
     setTimeout(() => {
       setAlert(null);
-    }, 1500);
+    }, 5000);
   }
   return (
     <>
@@ -34,6 +35,7 @@ function App() {
               <Route exact path="/about" element={<About />}></Route>
               <Route exact path="/login" element={<Login showAlert={showAlert} />}></Route>
               <Route exact path="/signup" element={<Signup showAlert={showAlert} />}></Route>
+              <Route exact path="/blog" element={<Blog />}></Route>
             </Routes>
           </div>
         </BrowserRouter>

@@ -31,6 +31,9 @@ const Navbar = () => {
                             <li className="nav-item">
                                 <Link className={`nav-link ${location.pathname === '/about' ? "active" : ""}`} to="/about">About</Link>
                             </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/blog">Blog</Link>
+                            </li>
                         </ul>
                         {!localStorage.getItem('authToken') ? <form className="d-flex" role="search">
                             <Link className="btn btn-primary btn-sm mx-2" to="/signup" role="button">Sign Up</Link>
