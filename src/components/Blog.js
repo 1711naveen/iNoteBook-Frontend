@@ -38,7 +38,7 @@ const Blog = () => {
                     <div class="row">
                         <div class="col-8 border border-dark border-3">
                             <input type="text" name="title" id="title" value={title} onChange={handleTitle}/>
-                            {/* <span>Title description, Dec 7, 2017</span> */}
+                            <span>Title description, Dec 7, 2017</span>
                         </div>
                         <div class="col-4 border border-dark border-2">col-4</div>
                     </div>
