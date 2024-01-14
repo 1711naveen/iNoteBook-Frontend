@@ -9,6 +9,7 @@ import { useState } from 'react';
 import Login from './components/Login';
 import Signup from './components/Signup';
 import Blog from './components/Blog';
+import Message from './components/Message';
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
               <Route exact path="/login" element={<Login showAlert={showAlert} />}></Route>
               <Route exact path="/signup" element={<Signup showAlert={showAlert} />}></Route>
               <Route exact path="/blog" element={<Blog />}></Route>
+              <Route exact path="/message" element={<Message showAlert={showAlert} />}></Route>
             </Routes>
           </div>
         </BrowserRouter>
